@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+def factors(number):
+
+    for j in range(2, number):
+        if (number % j) == 0:
+            k = number // j
+            print('{} = {} * {}'.format(number, k, j))
+            break
